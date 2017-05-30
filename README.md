@@ -1,6 +1,6 @@
 # Mostly HTML
 
-> Creates HTML from mostly-dom a VNode
+> Creates HTML from mostly-dom VNode
 
 ## Get it
 ```sh
