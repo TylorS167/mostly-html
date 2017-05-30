@@ -1,19 +1,33 @@
-# lib-starter
+# Mostly HTML
 
-## Usage
+> Creates HTML from mostly-dom a VNode
+
+## Get it
 ```sh
-git clone https://github.com/TylorS/lib-starter LIBRARY_NAME
-
-cd LIBRARY_NAME
-
-rm -rf .git
-
-git init
-
-git remote add origin git@github.com:USERNAME/REPO_NAME
-
-node .scripts/addDevDependencies.sh
+yarn add mostly-html mostly-dom
+# or
+npm install --save mostly-html mostly-dom
 ```
 
-- Edit the first 3 fields in the package.json
-- Develop!
+## API
+
+### `toHtml(vNode: VNode): string`
+
+Given a VNode it returns a HTML string
+
+```typescript
+import { div, button, h1 } from 'mostly-dom'
+import { toHtml } from 'mostly-html'
+
+const view = (amount: number) =>
+  div({ className: 'foo' }, [
+    button('#increment', 'Increment'),
+    button('#decrement', 'Decrement'),
+    h1(String(amount))
+  ])
+
+const html = toHtml(view(1))
+
+console.log(html)
+// => <div class="foo"><button id="increment">Increment</button><button id="decrement">Decrement</button><h1>1</h1></div>
+```
