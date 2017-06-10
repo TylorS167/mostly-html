@@ -1,5 +1,7 @@
 # Mostly HTML
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/TylorS167/mostly-html.svg)](https://greenkeeper.io/)
+
 > Creates HTML from mostly-dom VNode
 
 ## Get it
