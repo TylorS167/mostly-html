@@ -7,16 +7,10 @@ export function toHtml<T extends Element = Element>(vNode: VNode<T>): string {
 }
 
 function vNodeToHtml(vNode: VNode): string {
-  const { tagName, className, id, scope, children, props, namespace, text } = vNode
+  const { tagName, scope, children, props, namespace, text } = vNode
 
   const attributes: Map<string, any> = new Map()
   let result = '<' + tagName
-
-  if (className)
-    attributes.set('class', className)
-
-  if (id)
-    attributes.set('id', id)
 
   if (scope)
     attributes.set(SCOPE_ATTRIBUTE, scope)

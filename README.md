@@ -21,8 +21,8 @@ import { toHtml } from 'mostly-html'
 
 const view = (amount: number) =>
   div({ className: 'foo' }, [
-    button('#increment', 'Increment'),
-    button('#decrement', 'Decrement'),
+    button({ id: 'increment' }, 'Increment'),
+    button({ id: 'decrement' }, 'Decrement'),
     h1(String(amount))
   ])
 
