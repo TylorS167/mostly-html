@@ -27,7 +27,7 @@
     "validate-commit-message": "3.0.1"
   },
   "dependencies": {
-    "mostly-dom": "4.3.0"
+    "mostly-dom": "5.0.0"
   },
   "scripts": {
     "build": "yarn build:commonjs && yarn build:es2015",
