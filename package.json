@@ -2,7 +2,7 @@
   "name": "mostly-html",
   "description": "Convert mostly-dom VNodes into HTML",
   "repository": "https://github.com/TylorS167/mostly-html",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "typings": "lib/index.d.ts",
