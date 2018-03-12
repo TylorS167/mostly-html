@@ -1,3 +1,8 @@
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/TylorS167/mostly-html/compare/v2.0.0...v3.0.0) (2018-03-12)
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/TylorS167/mostly-html/compare/v1.1.0...v2.0.0) (2017-09-14)
 
